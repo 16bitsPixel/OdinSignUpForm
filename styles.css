@@ -6,7 +6,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -51,6 +51,11 @@ table {
 
 
 /* begin personal styling after default */
+@font-face {
+	font-family: fjalla-one;
+	src: url(./fonts/FjallaOne-Regular.ttf);
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -89,20 +94,29 @@ table {
 	background: #EAFDFF;
 }
 
+.description, .callingDesc {
+	font-size: 4vh;
+	box-sizing: border-box;
+	width: 60vw;
+	margin-top: 5vh;
+	margin-left: 5vw;
+	font-family: fjalla-one;
+}
+
 .main > form {
 	background: white;
-	margin-top: 20vh;
+	margin-top: 8vh;
 	box-shadow: 0px 10px 20px -20px;
-	min-height: 35vh;
+	min-height: 40vh;
 	display: flex;
 	flex-direction: column;
 }
 
 form > h2 {
 	margin-left: 5vw;
-	font-size: 2rem;
+	font-size: 4vh;
 	font-weight: bold;
-	margin-top: 8vh;
+	margin-top: 6vh;
 	margin-bottom: 3vh;
 }
 
@@ -116,10 +130,11 @@ form > .formSections > section {
 	display: flex;
 	margin-left: 5vw;
 	gap: 5vw;
-	font-size: 1rem;
+	font-size: 2vh;
 }
 
 section > p > input {
 	box-sizing: border-box;
+	height: 3vh;
 	width: 10vw;
 }
