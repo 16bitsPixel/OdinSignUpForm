@@ -56,9 +56,13 @@ table {
 	src: url(./fonts/FjallaOne-Regular.ttf);
 }
 
+em {
+	margin-right: 4px;
+}
+
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .sidebar {
@@ -110,6 +114,12 @@ table {
 	min-height: 40vh;
 	display: flex;
 	flex-direction: column;
+}
+
+label {
+	font-size: 1.5vh;
+	color: rgb(60, 60, 60);
+	letter-spacing: 0.2rem;
 }
 
 form > h2 {
