@@ -28,6 +28,28 @@ phone.addEventListener("keyup", () => {
     }
 });
 
+// check validity on passwords
+pwd.addEventListener("keyup", () => {
+    if (cpwd.value == pwd.value) {
+        pwd.classList.remove("error");
+        cpwd.classList.remove("error");
+    }
+    else {
+        pwd.classList.add("error");
+        cpwd.classList.add("error");
+    }
+});
+cpwd.addEventListener("keyup", () => {
+    if (cpwd.value == pwd.value) {
+        pwd.classList.remove("error");
+        cpwd.classList.remove("error");
+    }
+    else {
+        pwd.classList.add("error");
+        cpwd.classList.add("error");
+    }
+});
+
 // check validity on submit
 let submit = document.querySelector(".submitBtn");
 submit.addEventListener("click", () => {
@@ -40,5 +62,8 @@ submit.addEventListener("click", () => {
     if (!phone.checkValidity()) {
         phone.classList.add("error");
     }
+    if (pwd.value != cpwd.value || !pwd.checkValidity() || !cpwd.checkValidity()) {
+        pwd.classList.add("error");
+        cpwd.classList.add("error");
+    }
 });
-
