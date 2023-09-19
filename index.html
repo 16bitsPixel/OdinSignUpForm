@@ -24,46 +24,48 @@
             </p>
             <p class = "callingDesc">You <em>know</em> you want to.</p>
 
-            <form action = "" method = "post">
-                <h2>Let's do this!</h2>
+            <form>
+                <div class="formContainer">
+                    <h2>Let's do this!</h2>
 
-                <div class = "formSections">
-                    <section>
-                        <p>
-                            <label for = "fName">FIRST NAME</label><br>
-                            <input type = "text" id = "fName">
-                        </p>
-                        <p>
-                            <label for = "lName">LAST NAME</label><br>
-                            <input type = "text" id = "lName">
-                        </p>
-                    </section>
-    
-                    <section>
-                        <p>
-                            <label for = "email">EMAIL</label><br>
-                            <input type = "email" id = "email">
-                        </p>
-                        <p>
-                            <label for = "phone">PHONE NUMBER</label><br>
-                            <input type = "tel" id = "phone">
-                        </p>
-                    </section>
-    
-                    <section>
-                        <p>
-                            <label for = "pwd">PASSWORD</label><br>
-                            <input type = "password" id = "pwd">
-                        </p>
-                        <p>
-                            <label for = "cpwd">CONFIRM PASSWORD</label><br>
-                            <input type = "password" id = "cpwd">
-                        </p>
-                    </section>
+                    <div class = "formSections">
+                        <section>
+                            <p>
+                                <label for = "fName">FIRST NAME</label><br>
+                                <input type = "text" id = "fName" required>
+                            </p>
+                            <p>
+                                <label for = "lName">LAST NAME</label><br>
+                                <input type = "text" id = "lName">
+                            </p>
+                        </section>
+        
+                        <section>
+                            <p>
+                                <label for = "email">EMAIL</label><br>
+                                <input type = "email" id = "email" required>
+                            </p>
+                            <p>
+                                <label for = "phone">PHONE NUMBER</label><br>
+                                <input type = "tel" id = "phone" required>
+                            </p>
+                        </section>
+        
+                        <section>
+                            <p>
+                                <label for = "pwd">PASSWORD</label><br>
+                                <input type = "password" id = "pwd" required>
+                            </p>
+                            <p>
+                                <label for = "cpwd">CONFIRM PASSWORD</label><br>
+                                <input type = "password" id = "cpwd" required>
+                            </p>
+                        </section>
+                    </div>
                 </div>
-            </form>
 
-            <button type = "submit" class = "submitBtn">SIGN UP</button>
+                <button type = "submit" class = "submitBtn">SIGN UP</button>
+            </form>
 
             <p class = "askLogin">Already have an account? <a class = "login" href = "">Log in</a></p>
         </div>
